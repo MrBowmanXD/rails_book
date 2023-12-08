@@ -1,0 +1,43 @@
+.notice-container, .alert-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.notice-container {
+    background-color: green;
+}
+
+.alert-container {
+    background-color: #f35151;
+}
+
+.alert, .notice {
+    justify-self: center;
+}
+
+.empty {
+    padding-right: 1px;
+}
+
+.cool-button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px;
+    color: black;
+    background: linear-gradient(to right, #fff, #eee); /* White gradient background */
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .cool-button:hover {
+    background: linear-gradient(to right, #eee, #fff); /* Hover effect */
+    color: #333; /* Change text color on hover */
+    border-color: #ddd; /* Change border color on hover */
+  }

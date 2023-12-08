@@ -10,15 +10,38 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
   </head>
 
   <header>
-    <p class="notice">
-      <%= notice %>
-    </p>
-    <p class="alert">
-      <%=  alert %>
-    </p>
+    <% unless notice.nil? %>
+      <div class="notice-container" data-controller="close-button">
+        <p class="notice">
+          <%= notice %>
+        </p>
+        
+          <button class="notice-close cool-button" data-action="click->close-button#close">
+            X
+          </button>
+        
+      </div>
+  <% end %>
+    
+  <% unless alert.nil? %>
+    <div class="alert-container" data-controller="close-button">
+      <div class="empty">
+      </div>
+      <p class="alert">
+        <%=  alert %>
+      </p>
+        <button class="alert-close cool-button" data-action="click->close-button#close">
+          X
+        </button>
+    </div>
+  <% end %>
   </header>
 
   <body>

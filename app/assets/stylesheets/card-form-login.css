@@ -1,0 +1,82 @@
+.page-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .main-content-container {
+    text-align: center;
+  }
+
+  .login-container {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .field {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .field input[type="email"],
+  .field input[type="password"],
+  .field input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .checkbox-container input {
+    text-align: center;
+  }
+
+  .field label {
+    display: inline-block;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .actions.center {
+    text-align: center;
+  }
+
+  .login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(to right, #4caf50, #45a049);
+    transition: background 0.3s ease;
+  }
+
+  .login-button:hover {
+    background: linear-gradient(to right, #45a049, #4caf50);
+  }
+
+  .links-container {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .links-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .links-container a:hover {
+    text-decoration: underline;
+  }

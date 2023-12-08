@@ -17,4 +17,9 @@
  * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ body {
+   background-color: #f0f0f0;
  }
